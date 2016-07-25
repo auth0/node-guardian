@@ -145,7 +145,7 @@ Example
 ```
 
 ##### `user.enableMFA()`
-Shortcut method, adds `user_metadata.disable_mfa = false` to the user. This wont be applied until you call update.
+Shortcut method, adds `user_metadata.use_mfa = false` to the user. This wont be applied until you call update.
 
 ##### `user.disableMFA(): Object`
-Shortcut method, adds `user_metadata.disable_mfa = true` to the user. This wont be applied until you call update.
+Shortcut method, adds `user_metadata.use_mfa = true` to the user. This wont be applied until you call update.
