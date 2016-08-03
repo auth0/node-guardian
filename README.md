@@ -4,6 +4,27 @@ Client for Guardian Management based on API2
 This is an small wrapper arround API2 that help you use the Guardian api.
 
 ## API
+
+### OAuth 2.0 authorization framework
+#### `.configure({ client: { tenant, region, clientId, clientSecret, domain, [baseUrl] } }):Client`
+Configures the client and returns a configured instance that will use
+OAuth2 against `domain` to request the authorization token for
+Auth0 Management API, Auth0 Management API must be properly configured
+to support this flow. [More info](https://auth0.com/docs/api-auth) (recomended)
+
+Example
+```
+  const client = require('guardian-management-client').configure({
+    tenant: 'mytenant',
+    region: 'eu' // Valid: eu | us | au,
+    clientId: // Client ID for a client with access to Auth0 Management API,
+    clientSecret: // Client secret for the Client ID Provided,
+    domain: '', // Will be used to get the token and (optionally call api2)
+    baseUrl: '', // Base url for API2, if not provided will be built as `https://{domain}/api/v2`
+  });
+```
+
+### Direct token based auth
 #### `.configure({ client: { tenant, region, token } }):Client`
 Configures the client and returns a configured instance
 
