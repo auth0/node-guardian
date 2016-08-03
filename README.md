@@ -5,12 +5,12 @@ This is an small wrapper arround API2 that help you use the Guardian api.
 
 ## API
 
-### OAuth 2.0 authorization framework
+### OAuth 2.0 authorization framework (recomended)
 #### `.configure({ client: { tenant, region, clientId, clientSecret, domain, [baseUrl] } }):Client`
 Configures the client and returns a configured instance that will use
 OAuth2 against `domain` to request the authorization token for
 Auth0 Management API, Auth0 Management API must be properly configured
-to support this flow. [More info](https://auth0.com/docs/api-auth) (recomended)
+to support this flow. [More info](https://auth0.com/docs/api-auth) 
 
 Example
 ```
