@@ -4,11 +4,9 @@ const expect = require('chai').expect;
 const stubs = require('./stubs');
 const data = require('./data');
 const factorProvider = require('../').configure({
-  client: {
-    region: 'us',
-    token: data.token,
-    tenant: data.tenant
-  }
+  region: 'us',
+  token: data.token,
+  tenant: data.tenant
 }).factorProvider;
 
 describe('factorProvider', function() {
