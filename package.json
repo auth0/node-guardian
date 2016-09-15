@@ -1,6 +1,6 @@
 {
-  "name": "guardian-management-client",
-  "version": "2.0.0",
+  "name": "node-guardian",
+  "version": "2.0.1",
   "description": "Client for Guardian Management API",
   "main": "index.js",
   "scripts": {
