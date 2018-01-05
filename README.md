@@ -1,3 +1,9 @@
+# DEPRECATED
+
+This library has been deprecated, and is no longer supported.
+
+Please consider using [Auth0 Management API](https://auth0.com/docs/api/management/v2) instead.
+
 # Guardian Management Client
 Client for Guardian Management based on API2
 
